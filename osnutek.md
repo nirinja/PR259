@@ -38,4 +38,4 @@ Ti podatki zajemajo strukturo BDP po letih. Obsegajo obdobje od leta 1995 do 202
 
 
 ## **Cilj**  
-Glavni cilj projekta je analiza trendov delovno aktivnega prebivalstva v Sloveniji skozi čas ter identifikacija ključnih dejavnikov, ki vplivajo na dinamiko zaposlitvenih vzorcev. Na podlagi zbranih podatkov in analiz bomo razvili interaktivno vizualizacijo, ki bo omogočala vpogled v trende zaposlitvene strukture ter podala napovedi za prihodnja leta.
+Glavni cilj projekta je analiza trendov delovno aktivnega prebivalstva v Sloveniji skozi čas ter identifikacija ključnih dejavnikov, ki vplivajo na dinamiko zaposlitvenih vzorcev. Na podlagi analize bomo identificirali ključne demografske in regijske vzorce ter poskusili napovedati trende za prihodnja leta.
