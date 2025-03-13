@@ -1,5 +1,6 @@
-# **Analiza proračuna Slovenije**  
-*Projekt pri predmetu Podatkovno rudarjenje, skupina 9*  
+# **Analiza delovno aktivnega prebivalstva in BDP Slovenije**
+
+*Projekt pri predmetu Podatkovno rudarjenje, skupina 9*
 
 ## **Člani**  
 - Nika Demšar  
@@ -7,26 +8,34 @@
 - Anja Klančar  
 - Eva Müller  
 
+---
+
 ## **Opis virov in podatkov**  
-Uporabljali bomo odprte podatke Slovenije: [Proračun Republike Slovenije](https://podatki.gov.si/dataset/proracun-republike-slovenije), ki vsebujejo podatke do leta 2014.  
-Podatke bomo obdelovale v JSON obliki. Do podatkovnega API-ja lahko dostopamo z ukazom:  
-[https://podatki.gov.si/api/3/action/datastore_search](https://podatki.gov.si/api/3/action/datastore_search).  
+Uporabljali bomo odprte podatke Slovenije. Dejanski podatki so v formatu PC-Axis (.px).  
 
-Proračun je sestavljen iz naslednjih delov (ZJF, 10. člen; Proračunski priročnik 2025):  
+**1. [Delovno aktivno prebivalstvo](https://podatki.gov.si/dataset/surs0700992s)**
 
-1. **Splošni del proračuna (I. del)**:  
-   Vključuje skupno bilanco prihodkov in odhodkov (A bilanca), račun finančnih terjatev in naložb (B bilanca) ter račun financiranja (C bilanca).  
-   Pripravljen je po ekonomski klasifikaciji in podaja informacije o tem, kako država zbira prihodke in jih porablja.  
+Ti podatki zajemajo delovno aktivno prebivalstvo po starostnih skupinah in statističnih regijah prebivališča po mesecih. Obsegajo obdobje od leta 2010 do 2024 in vsebujejo naslednje atribute:  
+- Število delovno aktivnega prebivalstva 
+- Populacija 
+- Statistična regija  
+- Starostni razred 
+- Mesec 
 
-2. **Posebni del proračuna (II. del)**:  
-   Vključuje finančne načrte neposrednih uporabnikov (institucionalna klasifikacija) ter odhodke in druge izdatke, predstavljene po politikah, programih in podprogramih (programska klasifikacija).  
-   Daje informacije o tem, kdo porablja sredstva in za katera področja.  
+**2. [Izdatkovna struktura BDP](https://podatki.gov.si/dataset/surs0301935s?resource_id=8935a064-5888-4ab9-9066-0838f6f2743b)**
 
-3. **Načrt razvojnih programov (III. del)**:  
-   Vključuje letne načrte razvojnih programov neposrednih uporabnikov, ki so opredeljeni z dokumenti dolgoročnega razvojnega načrtovanja ali posebnimi predpisi.  
-   Odhodki so načrtovani po posameznih ukrepih, projektih in virih financiranja za celotno obdobje izvajanja. Prikazani so po podprogramih, ukrepih, skupinah projektov in virih sredstev.  
+Ti podatki zajemajo strukturo BDP po letih. Obsegajo obdobje od leta 1995 do 2024 in vsebujejo naslednje atribute:  
+- Izdatkovna struktura BDP 
+- Milijon EUR, odstotne točke 
+- Leto  
 
-Osredotočile se bomo na **I. in II. del proračuna** – splošni in posebni del. Analizirale bomo, kakšen je proračun in kolikšen del sredstev se porabi za posamezna področja. Na koncu bomo sestavo proračuna povezale s sestavo državnega zbora in koalicije v tistem času.  
+
+## **Ključna vprašanja**  
+- Kako se je spreminjala starostna struktura delovno aktivnega prebivalstva v različnih regijah?  
+- Ali obstajajo sezonski vzorci glede na posamezne regije ali starostne skupine?  
+- Kakšen vpliv sta imeli gospodarska kriza in pandemija COVID-19 na zaposlenost?  
+- Kakšne so napovedi za prihodnja leta glede na demografske trende in staranje prebivalstva?  
+
 
 ## **Cilj**  
-Želimo pokazati korelacijo med sestavo državnega zbora in koalicije ter strukturo proračuna. S tem bi lahko na podlagi sestave parlamenta napovedali proračun.
+Glavni cilj projekta je analiza trendov delovno aktivnega prebivalstva v Sloveniji skozi čas ter identifikacija ključnih dejavnikov, ki vplivajo na dinamiko zaposlitvenih vzorcev. Na podlagi zbranih podatkov in analiz bomo razvili interaktivno vizualizacijo, ki bo omogočala vpogled v trende zaposlitvene strukture ter podala napovedi za prihodnja leta.
