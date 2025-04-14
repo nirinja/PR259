@@ -33,7 +33,10 @@ Ti podatki zajemajo strukturo BDP po letih. Obsegajo obdobje od leta 1995 do 202
 ## **Ključna vprašanja**  
 - Kako se je spreminjala starostna struktura delovno aktivnega prebivalstva v različnih regijah?  
 - Ali obstajajo sezonski vzorci glede na posamezne regije ali starostne skupine?  
-- Kakšen vpliv sta imeli gospodarska kriza in pandemija COVID-19 na zaposlenost?  
+- Kakšen vpliv sta imeli gospodarska kriza in pandemija COVID-19 na zaposlenost?
+- Kakšna je povezava med delovno aktivnim prebivalstvom in BDP
+- Kakšna je povezava ustvarjenim BDP delovno aktivnega prebivalsta in določena poraba BDP s strani vlade?
+- Kakšen je zamik, glede na to da se proračun sprejema 2 leti v naprej? 
 - Kakšne so napovedi za prihodnja leta glede na demografske trende in staranje prebivalstva?  
 
 
