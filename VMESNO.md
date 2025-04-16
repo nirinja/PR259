@@ -109,7 +109,7 @@ rast delovno aktivnega prebivalstva, kar je posledica koncentracije gospodarskih
 bolj podeželske regije kažejo počasnejšo rast ali celo stagnacijo.
 
 
-![image](images/starost.png)
+![image](https://github.com/nirinja/PR259/blob/b04f533adfa049d7c6091115ab70940b6146a4e6/images/Starost.png)
 
 **Graf 1:**
 prikaz variacije števila delovno aktivnega prebivalstva skozi leta po različnih starostnih skupinah
