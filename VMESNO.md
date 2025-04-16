@@ -26,13 +26,13 @@ Analiza temelji na dveh glavnih virih odprtih podatkov Slovenije iz [podatki.gov
 
 1. **Delovno aktivno prebivalstvo**  
    - **Vir:** [Delovno aktivno prebivalstvo](https://podatki.gov.si/dataset/surs0700992s)  
-   - **Obdobje:** 2010–2024  
+   - **Obdobje:** 2010–2025  
    - **Atributi:** Število delovno aktivnega prebivalstva, populacija, statistična regija, starostni razred in mesec  
    - **Namen:** spremljanje zaposlenosti in demografskih trendov. Podatki omogočajo analizo razdelitve po starostnih skupinah in regijah ter preučevanje sezonskih nihanj.
 
 2. **Izdatkovna struktura BDP**  
    - **Vir:** [Izdatkovna struktura BDP](https://podatki.gov.si/dataset/surs0301935s?resource_id=8935a064-5888-4ab9-9066-0838f6f2743b)  
-   - **Obdobje:** 1995–2024  
+   - **Obdobje:** 1995–2025  
    - **Atributi:** Izdatkovna struktura BDP, vrednost v milijonih EUR oziroma odstotne točke ter leto  
    - **Namen:** Prikaz sprememb v sestavi BDP. Podatki omogočajo sledenje spremembam gospodarske aktivnosti in ugotavljanje vpliva na zaposlovanje.
 
@@ -46,9 +46,8 @@ smo iz mesecev pretvorili v leta za boljšo preglednost.
 
 
 - **Časovna serijska analiza:**  
-  Preučile smo letne trende delovno aktivnega prebivalstva. S pomočjo agregacije po letih smo izračunale skupno število delovno 
-aktivnih prebivalcev in te rezultate vizualizirale v stolpčnem diagramu, kar omogoča jasen pregled sprememb skozi čas. S tem 
-smo lahko identificirale sezonske vzorce in prepoznale nenadne odklone.
+  Preučile smo letne trende delovno aktivnega prebivalstva. Izračunale skupno število delovno 
+aktivnih prebivalcev po letih in te rezultate vizualizirale v stolpčnem diagramu, kar omogoča jasen pregled sprememb skozi čas.
 
 
 - **Starostna analiza:**
@@ -62,10 +61,8 @@ To nam omogoča analizo procesov staranja prebivalstva in njihovega vpliva na di
 - **Analiza po regijah:**
 
     Pri analizi strukture delovnega prebivalstva po regijah smo podatke razvrstile glede na statistične regije, kar je 
-omogočilo primerjavo in identifikacijo regionalnih razlik. Najprej smo izbrale podatke za posamezne regije in jih ustrezno agregirale, 
-da smo pridobile letne trende števila delovno aktivnih prebivalcev za vsako regijo. S tem pristopom smo lahko vizualno primerjale, 
-kako se delovno aktivno prebivalstvo spreminja med urbanimi in podeželskimi območji, ter prepoznale specifične regionalne vzorce..
-
+omogočilo primerjavo in identifikacijo regionalnih razlik.  Nato smo lahko vizualno primerjale, 
+kako se delovno aktivno prebivalstvo spreminja med urbanimi in podeželskimi območji, ter prepoznale specifične regionalne vzorce.
 
 
 - **Korelacijska analiza:**  
@@ -112,7 +109,7 @@ rast delovno aktivnega prebivalstva, kar je posledica koncentracije gospodarskih
 bolj podeželske regije kažejo počasnejšo rast ali celo stagnacijo.
 
 
-![image](../PR259/images/starost.png)
+![image](images/starost.png)
 
 **Graf 1:**
 prikaz variacije števila delovno aktivnega prebivalstva skozi leta po različnih starostnih skupinah
