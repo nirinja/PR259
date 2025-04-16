@@ -8,8 +8,6 @@
 - Anja Klančar  
 - Eva Müller 
 
----
-
 ## Uvod in opis problema
 
 Projekt se osredotoča na analizo delovno aktivnega prebivalstva in strukture BDP v Sloveniji, pri čemer želimo razumeti, kako demografski trendi in gospodarski kazalniki vplivajo na dinamiko zaposlovanja. V tem vmesnem poročilu predstavljamo preliminarne rezultate analize, ki temelji na odprtih podatkih in časovnih serijah o delovno aktivnem prebivalstvu ter letnih podatkih o izdatkovni strukturi BDP. S tem pristopom želimo osvetliti sezonske vzorce, vpliv kriznih obdobij (kot so gospodarska kriza in pandemija COVID-19) ter izdelati napovedne modele za prihodnje spremembe.
@@ -35,13 +33,18 @@ Analiza temelji na dveh glavnih virih odprtih podatkov Slovenije, ki smo jih pri
 Za realizacijo analize smo najprej odstranile nereprezentativne podatke z namenom priprave na nadaljnje analize. Sledile so naslednje ključne faze:
 
 - **Časovna serijska analiza:**  
-  Preučile smo letne trende delovno aktivnega prebivalstva. S pomočjo agregacije po letih smo izračunale skupno število delovno aktivnih prebivalcev in te rezultate vizualizirale v stolpčnem diagramu, kar omogoča jasen pregled sprememb skozi čas. S tem smo lahko identificirale sezonske vzorce in prepoznale nenadne odklone, npr. v obdobju COVID-19.
+  Preučile smo letne trende delovno aktivnega prebivalstva. S pomočjo agregacije po letih smo izračunale skupno število delovno aktivnih prebivalcev in te rezultate vizualizirale v stolpčnem diagramu, kar omogoča jasen pregled sprememb skozi čas. S tem smo lahko identificirale sezonske vzorce in prepoznale nenadne odklone.
 
 - **Starostna analiza:**
-    
 
-- **Korelacijska analiza:**  
-  Ugotovile smo, kako se spreminja število delovno aktivnih prebivalcev v povezavi z letno vrednostjo BDP. Analiza korelacije je pokazala, da obstaja močna povezanost med tema dvema kazalnikoma, kar potrjuje, da vpliv demografskih sprememb pomembno vpliva na gospodarski razvoj.
+    Pri starostni analizi smo najprej podatke razvrstile glede na starostne skupine, ki so bile definirane v viru podatkov, ter izdvojile informacije o številu delovno aktivnih prebivalcev za vsako starostno kategorijo. Rezultati so bili vizualno predstavljeni preko grafov, ki jasno prikazujejo trende v deležih posameznih starostnih kategorij skozi opazovano obdobje. To nam omogoča analizo procesov staranja prebivalstva in njihovega vpliva na dinamiko trga dela.
+
+- **Analiza po regijah:**
+
+    Pri analizi strukture delovnega prebivalstva po regijah smo podatke razvrstile glede na statistične regije, kar je omogočilo primerjavo in identifikacijo regionalnih razlik. Najprej smo izbrale podatke za posamezne regije in jih ustrezno agregirale, da smo pridobile letne trende števila delovno aktivnih prebivalcev za vsako regijo. S tem pristopom smo lahko vizualno primerjale, kako se delovno aktivno prebivalstvo spreminja med urbanimi in podeželskimi območji, ter prepoznale specifične regionalne vzorce. 
+- **Korelacijska analiza:**
+
+  Za preverjanje povezanosti med številom delovno aktivnih prebivalcev in letno vrednostjo BDP smo izvedle korelacijsko analizo. Zagotovile smo da sta obe seriji podatkov ustrezno usklajeni po letih. Z uporabo Pearsonovega korelacijskega koeficienta smo ugotovile zelo močno pozitivno povezanost med tema dvema kazalnikoma.
 
 - **Analiza vpliva kriznih obdobij:**  
   Posebej smo preučile vpliv gospodarske krize in pandemije COVID-19. Vizualizacije jasno prikazujejo, da se je v obdobjih kriz pojavilo stanje stagnacije oziroma padca delovno aktivnega prebivalstva, s kasnejšim postopnim okrevanjem, kar dodatno poudarja občutljivost trga dela na zunanje šokove.
