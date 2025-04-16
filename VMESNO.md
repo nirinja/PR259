@@ -46,11 +46,6 @@ Za realizacijo analize smo najprej odstranile nereprezentativne podatke z nameno
 
   Za preverjanje povezanosti med številom delovno aktivnih prebivalcev in letno vrednostjo BDP smo izvedle korelacijsko analizo. Zagotovile smo da sta obe seriji podatkov ustrezno usklajeni po letih. Z uporabo Pearsonovega korelacijskega koeficienta smo ugotovile zelo močno pozitivno povezanost med tema dvema kazalnikoma.
 
-- **Analiza vpliva kriznih obdobij:**  
-  Posebej smo preučile vpliv gospodarske krize in pandemije COVID-19. Vizualizacije jasno prikazujejo, da se je v obdobjih kriz pojavilo stanje stagnacije oziroma padca delovno aktivnega prebivalstva, s kasnejšim postopnim okrevanjem, kar dodatno poudarja občutljivost trga dela na zunanje šokove.
-
-Pri vizualizaciji rezultatov smo uporabile grafe, ki so ključni za boljše ponazoritev trendov in korelacij med analiziranimi kazalniki.
-
 ## Uporabljena orodja
 
 Pri izvedbi analize smo uporabile naslednja orodja:
@@ -79,7 +74,8 @@ Dosedanje analize prinašajo več pomembnih vpogledov:
 
 ## Zaključek in nadaljnji koraki
 
-Dosedanji rezultati nakazujejo na ključne demografske in gospodarske trende v Sloveniji, ki bodo vplivali na prihodnjo dinamiko trga dela. Na podlagi dobivenih vpogledov načrtujemo dodatno poglobljeno analizo...
+Dosedanji rezultati nakazujejo...
+Na podlagi dobivenih vpogledov načrtujemo dodatno poglobljeno analizo...
 
 ---
 
