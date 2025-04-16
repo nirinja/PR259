@@ -1,4 +1,4 @@
-# **Analiza delovno aktivnega prebivalstva in BDP Slovenije**
+# Analiza delovno aktivnega prebivalstva in BDP Slovenije
 
 *Vmesno poročilo projekta pri predmetu Podatkovno rudarjenje, skupina 9*
 
@@ -10,72 +10,73 @@
 
 ---
 
-## Uvod in Opis problema
+## Uvod in opis problema
 
-Projekt se osredotoča na analizo delovno aktivnega prebivalstva in strukture BDP v Sloveniji, pri čemer želimo razumeti, kako demografski trendi in gospodarski kazalniki vplivajo na dinamiko zaposlovanja. V tem vmesnem poročilu predstavljamo preliminarne rezultate analize delovno aktivnega prebivalstva in strukture BDP v Sloveniji. Analiza temelji na odprtih podatkih, ki vključujejo časovne serije o delovno aktivnem prebivalstvu in letne podatke o izdatkovni strukturi BDP. S tem pristopom želimo osvetliti sezonske vzorce, vpliv kriznih obdobij (kot so gospodarska kriza in pandemija COVID-19) ter izdelati napovedne modele za prihodnje spremembe.
+Projekt se osredotoča na analizo delovno aktivnega prebivalstva in strukture BDP v Sloveniji, pri čemer želimo razumeti, kako demografski trendi in gospodarski kazalniki vplivajo na dinamiko zaposlovanja. V tem vmesnem poročilu predstavljamo preliminarne rezultate analize, ki temelji na odprtih podatkih in časovnih serijah o delovno aktivnem prebivalstvu ter letnih podatkih o izdatkovni strukturi BDP. S tem pristopom želimo osvetliti sezonske vzorce, vpliv kriznih obdobij (kot so gospodarska kriza in pandemija COVID-19) ter izdelati napovedne modele za prihodnje spremembe.
 
+## Podatki
 
-
-##  Podatki
-
-Analiza temelji na dveh glavnih virih odprtih podatkov Slovenije iz [podatki.gov.si](https://podatki.gov.si):
+Analiza temelji na dveh glavnih virih odprtih podatkov Slovenije, ki smo jih pridobile preko [podatki.gov.si](https://podatki.gov.si):
 
 1. **Delovno aktivno prebivalstvo**  
    - **Vir:** [Delovno aktivno prebivalstvo](https://podatki.gov.si/dataset/surs0700992s)  
    - **Obdobje:** 2010–2024  
    - **Atributi:** Število delovno aktivnega prebivalstva, populacija, statistična regija, starostni razred in mesec  
-   - **Namen:** spremljanje zaposlenosti in demografskih trendov. Podatki omogočajo analizo razdelitve po starostnih skupinah in regijah ter preučevanje sezonskih nihanj.
+   - **Namen:** Spremljanje zaposlenosti in demografskih trendov. Podatki omogočajo analizo razdelitve po starostnih skupinah in regijah ter preučevanje sezonskih nihanj.
 
 2. **Izdatkovna struktura BDP**  
    - **Vir:** [Izdatkovna struktura BDP](https://podatki.gov.si/dataset/surs0301935s?resource_id=8935a064-5888-4ab9-9066-0838f6f2743b)  
    - **Obdobje:** 1995–2024  
    - **Atributi:** Izdatkovna struktura BDP, vrednost v milijonih EUR oziroma odstotne točke ter leto  
-   - **Namen:** Prikaz sprememb v sestavi BDP. Podatki omogočajo sledenje spremembam gospodarske aktivnosti in ugotavljanje vpliva na zaposlovanje.
+   - **Namen:** Prikaz sprememb v sestavi BDP in sledenje gospodarskim trendom, ki vplivajo na zaposlovanje.
 
 ## Izvedene analize
 
-Za realizacijo analize smo najprej pripravili podatke z namenom čiščenja in standardizacije obeh zbirk. Sledi nekaj ključnih korakov in metod:
-
-- **Čiščenje in priprava podatkov:**  
-  Podatke smo uvozili v Python okolje, odstranili manjkajoče vrednosti in standardizirali formate dat. Pri tem smo poskrbeli, da so vsi atributi ustrezno kodirani za nadaljnjo analizo.
+Za realizacijo analize smo najprej odstranile nereprezentativne podatke z namenom priprave na nadaljnje analize. Sledile so naslednje ključne faze:
 
 - **Časovna serijska analiza:**  
-  Preučili smo mesečne trende delovno aktivnega prebivalstva z uporabo časovnih serij, kar je omogočilo identifikacijo sezonskih vzorcev in nenadnih odklonov (npr. v obdobju COVID-19).  
-- graf?
+  Preučile smo letne trende delovno aktivnega prebivalstva. S pomočjo agregacije po letih smo izračunale skupno število delovno aktivnih prebivalcev in te rezultate vizualizirale v stolpčnem diagramu, kar omogoča jasen pregled sprememb skozi čas. S tem smo lahko identificirale sezonske vzorce in prepoznale nenadne odklone, npr. v obdobju COVID-19.
+
+- **Starostna analiza:**
+    
+
 - **Korelacijska analiza:**  
-  Analizirali smo povezave med količino delovno aktivnega prebivalstva in letnimi vrednostmi BDP. Ta analiza je pripomogla k razumevanju, kako se spremembe na trgu dela odzivajo na gospodarske spremembe.  
+  Ugotovile smo, kako se spreminja število delovno aktivnih prebivalcev v povezavi z letno vrednostjo BDP. Analiza korelacije je pokazala, da obstaja močna povezanost med tema dvema kazalnikoma, kar potrjuje, da vpliv demografskih sprememb pomembno vpliva na gospodarski razvoj.
 
-- **Analiza vpliva zunanjih dejavnikov:**  
-  Posebej smo preučili vpliv gospodarske krize in pandemije COVID-19. Z uporabo regresijskih modelov smo poskušali identificirati, v kolikšni meri sta ti dogodka vplivala na delovno aktivno prebivalstvo.
+- **Analiza vpliva kriznih obdobij:**  
+  Posebej smo preučile vpliv gospodarske krize in pandemije COVID-19. Vizualizacije jasno prikazujejo, da se je v obdobjih kriz pojavilo stanje stagnacije oziroma padca delovno aktivnega prebivalstva, s kasnejšim postopnim okrevanjem, kar dodatno poudarja občutljivost trga dela na zunanje šokove.
 
-- **Napovedna analiza:**  
-  Z uporabo časovnih modelov (npr. ARIMA model) smo izdelali preliminarne napovedi o prihodnjih trendih, kar je še predmet dodatnih analiz.
+Pri vizualizaciji rezultatov smo uporabile grafe, ki so ključni za boljše ponazoritev trendov in korelacij med analiziranimi kazalniki.
 
-Pri vizualizaciji rezultatov smo uporabili grafe... moram dodat se grafe notr?
+## Uporabljena orodja
 
-##  Glavne ugotovitve
+Pri izvedbi analize smo uporabile naslednja orodja:
+- **Programski jezik:** Python  
+- **Knjižnice:** pandas, matplotlib, numpy, pyaxis  
+- **Platforma:** Jupyter Notebook  
+- **Podatkovni vmesnik:** pxwebreader za uvoz podatkov iz formata .px
 
-Dosedanje analize prinašajo več pomembnih ugotovitev:
+Celotna analiza je dosegljiva v datoteki [`koda/koda.ipynb`](koda/koda.ipynb) v repozitoriju.
+
+## Glavne ugotovitve
+
+Dosedanje analize prinašajo več pomembnih vpogledov:
+
 - **Spremembe demografske strukture:**  
-  Vidno se povečuje delež starejših delovno aktivnih prebivalcev, medtem ko se delež mlajših zmanjšuje, kar kaže na proces staranja prebivalstva.
-
-- **Sezonski vzorci:**  
-  Opazimo jasna sezonska nihanja, ki so lahko posledica panog, specifičnih gospodarskih ciklov ali začasnih zaposlovanj, kar se posebej izraža v nekaterih regijah.
+  Opazile smo, da se delež starejših delovno aktivnih prebivalcev v Sloveniji veča, medtem ko se delež mlajših zmanjšuje. Ta trend kaže na proces staranja prebivalstva, kar pomeni, da se več ljudi iz skupine 55+ aktivno udeležuje na trgu dela, medtem ko mlajše generacije vstopajo v delovno silo s slabšo hitrostjo.
 
 - **Vpliv kriznih obdobij:**  
-  Analize kažejo na ostre padce števila zaposlenih med kriznimi obdobji, kot sta gospodarska kriza in pandemija COVID-19, s kasnejšim postopnim okrevanjem.
+  Analize kažejo na izražene padce števila zaposlenih med gospodarsko kriznimi obdobji, kjer je videti, da se med kriznimi leti 2010–2013 število delovno aktivnih prebivalcev ustavi ali celo zniža, medtem ko pandemija COVID-19 privede do blagega začasnega upada, s hitrim okrevanjem v poznejših obdobjih. To kaže, da trgi dela precej reagirajo na zunanje gospodarske šoke.
 
 - **Povezava z gospodarskimi kazalniki:**  
-  Statistična analiza potrjuje, da obstaja korelacija med številom delovno aktivnih oseb in letno vrednostjo BDP, kar nakazuje medsebojno povezavo med demografskimi trendi in gospodarskimi spremembami.
+  Statistična analiza potrjuje, da obstaja močna pozitivna korelacija med številom delovno aktivnih prebivalcev in letno vrednostjo BDP. Večja zaposlenost sovpada z večjo gospodarsko rastjo, kar potrjuje pomembnost človeškega kapitala kot ključnega dejavnika pri ustvarjanju gospodarske vrednosti.
 
-
-##  Uporabljena orodja
-- Python, pandas, matplotlib, seaborn
-- Jupyter Notebook
-- pxwebreader (uvoz podatkov iz .px)
-
-Celotna analiza se nahaja v [`koda/koda.ipynb`](koda/koda.ipynb).
+- **Regijska dinamika:**  
+  Primerjava med različnimi statističnimi regijami razkriva, da urbanizirane regije, kot je Osrednjeslovenska, beležijo najmočnejšo rast delovno aktivnega prebivalstva, kar je posledica koncentracije gospodarskih aktivnosti. Nasprotno pa bolj podeželske regije kažejo počasnejšo rast ali celo stagnacijo, kar priporoča potrebe po regionalni podpori in investicijah.
 
 ## Zaključek in nadaljnji koraki
 
-Dosedanji rezultati nakazujejo na pomembne demografske trende in povezanost med zaposlenostjo in gospodarskimi kazalniki v Sloveniji.  --plan za ostala uprasanja?
+Dosedanji rezultati nakazujejo na ključne demografske in gospodarske trende v Sloveniji, ki bodo vplivali na prihodnjo dinamiko trga dela. Na podlagi dobivenih vpogledov načrtujemo dodatno poglobljeno analizo...
+
+---
+
