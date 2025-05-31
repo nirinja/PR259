@@ -1,12 +1,13 @@
 import streamlit as st
 import pandas as pd
 import os
+#streamlit run app.py
 
 
-@st.cache(allow_output_mutation=True)
+@st.cache_data
 def load_data():
     BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-    DATA_DIR = os.path.join(BASE_DIR, "koda", "podatki")
+    DATA_DIR = os.path.join(BASE_DIR, "podatki")
 
     # 1) Naloži „delo.csv“ in pretvori MESEC → YEAR, DATE
     path_delo = os.path.join(DATA_DIR, "delo.csv")
