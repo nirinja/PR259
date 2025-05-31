@@ -56,7 +56,8 @@ Za boljšo predstvao rezultatov smo pripravile več grafov:
 ## Rezultati
 ### Starostne skupine
 Ugotovile smo, da je vse več ljudi, starejših od 50 let, delovno aktivnih. Eden od glavnih razlogov za to, je staranje prebivalstva in daljšanje življenske dobe. To bi lahko bila tudi posledica slabih pokojnin, ki si jih višajo s podaljševanjem delovne dobe.
-Opazile smo, da se je povprečna starost aktivnega prebivalstva zvišala za 2,8 leta. Najstarejša je obalna regija, kar lahko povezujemo tudi s priseljevanjem starejših prebivalcev, ki so blizu upokojitve. 
+Opazile smo, da se je povprečna starost aktivnega prebivalstva zvišala za 2,8 leta. Najstarejša je obalna regija, kar lahko povezujemo tudi s priseljevanjem starejših prebivalcev, ki so blizu upokojitve.
+![Starostne skupine delovno aktivnega prebivalstva](starostneSkupine.png)
 
 ### Regije
 V številu delovnega prebivalstva najbolj izstopa Osrednjeslovenska regija, kar lahko povežemo s priseljevanjem v Ljubljano zaradi boljših pogojev in višjih plač. Največjo rast delovno aktivnega prebivalstva beležijo Osrednjeslovenska, Podravska in Savinjska regija, ki imajo tudi največja urbana središča. Koroška, Primorsko-notranjska in Posavska, kjer je rast delovno aktivnega prebivalstva počasnejša, predstavljajo manj urbanizirana območja Slovenije, kjer je veliko izseljevanja.
@@ -70,6 +71,7 @@ Med podatki so lepo opazne gospodarske krize in epidemija COVID pri številu del
 Pri BDP lahko vidimo zelo majhen padec med letoma 2010 in 2013, kar prav tako odraža učinke krize. Od tega leta dalje se začne rast (s ponovnim padcem zaradi epidemije).
 Kaže se, da smo kljub učinkom kriz in epidemij lepo okrevali in se po vsakem padcu vrnili na rast. Ob pogledu na celotno obdobje (2010 - 2023) se lahko strinjamo, da ga zaznamuje rast vseh treh serij, kar podpira dejstvo, da je kombinacija gospodarske rasti in javnih izdatkov v pomoč rasti trga dela.
 Iz podatkov lahko zaključimo, da moramo, če želimo spdobujati trg dela, javnofinančne ukrepe načrtovati vnaprej in pričakovati zamik njihovega polnega učinka.
+![BDP](BDP.png)
 
 ## Zaključki
 - Trend zaposlenosti kaže postopno rast do določenega leta, z možnim padcem ob gospodarskih krizah.
