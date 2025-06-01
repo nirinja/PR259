@@ -46,7 +46,7 @@ Prikazale smo tudi spreminjanje BDP skozi leta in to primerjale z številom delo
 ### Sestava prebivalstva in delež delovno aktivnih
 Za razumevanje naslednjih podatkov je bilo najprej potrebno analizirati sestavo prebivalstva: koliko ljudi živi v Sloveniji, kolikšen je delež delovno sposobnih ter kolikšen je delež delovno aktivnih.
 Opazimo, da se število prebivalcev ter število in delež delovno aktivnega prebivalstva povečujeta, medtem ko se delež delovno sposobnih prebivalcev zmanjšuje. To je posledica staranja prebivalstva.
-![Sestava prebivalstva](images/starostneSkupine.png)
+![Sestava prebivalstva](images/tabelaPrebivalstva.png)
 
 ### Starostne skupine
 Ugotovile smo, da je vse več ljudi, starejših od 50 let, delovno aktivnih. Eden od glavnih razlogov za to, je staranje prebivalstva in daljšanje življenske dobe. To bi lahko bila tudi posledica slabih pokojnin, ki si jih višajo s podaljševanjem delovne dobe.
