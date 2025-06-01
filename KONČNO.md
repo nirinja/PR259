@@ -3,8 +3,7 @@
 
 *Končno poročilo projekta pri predmetu Podatkovno rudarjenje, skupina 9*
 
-Cilj te analize je preučiti, kako se spreminja delovno aktivno prebivalstvo v Sloveniji in kakšna je njegova povezanost z bruto domačim proizvodom (BDP).
-
+[Streamlit aplikacija](https://nirinja-pr259-streamlituvod-swx370.streamlit.app/)
 
 Člani:
 - Nika Demšar
