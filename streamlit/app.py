@@ -4,7 +4,7 @@ import pandas as pd
 import os
 
 
-@st.cache_data
+@st.cache
 def load_data():
     BASE_DIR = os.path.dirname(os.path.abspath(__file__))
     DATA_DIR = os.path.join(BASE_DIR, "..", "podatki")
@@ -88,7 +88,6 @@ if section == "Uvod":
 
 
 elif section == "Analiza":
-    st.header("Analiza")
 
     st.header("Primerjava regij skozi leta")
     regije = sorted(df_delo["STATISTIČNA REGIJA"].dropna().unique())
@@ -105,6 +104,62 @@ elif section == "Analiza":
         agregirano = df_filter.groupby(["YEAR", "STATISTIČNA REGIJA"])["DATA"].max().unstack()
 
     st.line_chart(agregirano)
+
+    st.markdown("---")
+
+    # 2) Interaktivni prikaz delovnega prebivalstva po STAROSTNIH RAZREDIH
+    df_age = (
+        df_delo
+        .groupby(["YEAR", "STAROSTNI RAZRED"])["DATA"]
+        .mean()  # povprečje mesečnih stanj čez vse regije
+        .reset_index()
+    )
+    df_age["YEAR"] = df_age["YEAR"].astype(int)
+
+    age_groups_all = sorted(df_age["STAROSTNI RAZRED"].unique())
+
+    st.write("**Izberi starostne razrede za prikaz (povprečje čez regije + mesece):**")
+    selected_age_groups = []
+    for age in age_groups_all:
+        if st.checkbox(age, value=True, key=f"cb_{age}"):
+            selected_age_groups.append(age)
+
+    year_min_ages = int(df_age["YEAR"].min())
+    year_max_ages = int(df_age["YEAR"].max())
+    izberimo_obdobje_ages = st.slider(
+        "Izberi obdobje let za starostne razrede:",
+        min_value=year_min_ages,
+        max_value=year_max_ages,
+        value=(year_min_ages, year_max_ages),
+    )
+
+    df_age_filtered = df_age[
+        (df_age["STAROSTNI RAZRED"].isin(selected_age_groups)) &
+        (df_age["YEAR"].between(izberimo_obdobje_ages[0], izberimo_obdobje_ages[1]))
+        ].copy()
+
+    if not selected_age_groups:
+        st.warning("Noben starostni razred ni izbran. Označite vsaj enega zgoraj.")
+    elif df_age_filtered.empty:
+        st.warning("Za izbrane starostne razrede in izbrano obdobje ni podatkov.")
+    else:
+        import altair as alt
+
+        st.subheader("Povprečje mesečnih stanj (čez regije) po letih")
+        line_chart = (
+            alt.Chart(df_age_filtered)
+            .mark_line(point=True)
+            .encode(
+                x=alt.X("YEAR:O", title="Leto"),
+                y=alt.Y("DATA:Q", title="Povprečje čez regije+mesece"),
+                color=alt.Color("STAROSTNI RAZRED:N", title="Starostni razred"),
+                tooltip=["YEAR", "STAROSTNI RAZRED", "DATA"],
+            )
+            .properties(width=700, height=300)
+            .interactive()
+        )
+        st.altair_chart(line_chart, use_container_width=True)
+        st.markdown("---")
 
     data_slovenia = df_delo[df_delo["STATISTIČNA REGIJA"] == "SLOVENIJA"]
 
