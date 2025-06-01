@@ -5,8 +5,8 @@ import os
 
 # DEFINIRAJ, KJE SO .PX in KAM SHRANIMO CSV
 BASE_DIR   = os.path.dirname(os.path.abspath(__file__))
-DATA_PX    = os.path.join(BASE_DIR, "koda", "podatki")
-DATA_CSV   = os.path.join(BASE_DIR, "koda", "podatki")
+DATA_PX    = os.path.join(BASE_DIR, "podatki")
+DATA_CSV   = os.path.join(BASE_DIR, "podatki")
 
 # Pretvori delo.PX → delo.csv
 px_delo = pyaxis.parse(os.path.join(DATA_PX, "delo.PX"), encoding="windows-1250")
