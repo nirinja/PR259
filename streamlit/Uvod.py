@@ -1,4 +1,5 @@
-#streamlit run Uvod.py
+# streamlit run Uvod.py
+# https://nirinja-pr259-streamlituvod-swx370.streamlit.app
 import streamlit as st
 
 st.title("Uvod")

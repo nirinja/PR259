@@ -15,20 +15,18 @@ st.write(
     """
     Tukaj primerjamo delovno aktivno prebivalstvo v različnih regijah skozi leta.
     Uporabnik lahko izbere regije, ki jih želi primerjati, ter način agregacije podatkov po letih:
-    povprečje, vsota ali največja vrednost.
+    povprečje ali največja vrednost.
     """
 )
 
 regije = sorted(df_delo["STATISTIČNA REGIJA"].dropna().unique())
 izbrane_regije = st.multiselect("Izberi regije za primerjavo:", regije, default=["SLOVENIJA"])
 
-metrika = st.radio("Agregacija po letu:", ["Povprečje", "Vsota", "Največ"])
+metrika = st.radio("Agregacija po letu:", ["Povprečje", "Največ"])
 df_filter = df_delo[df_delo["STATISTIČNA REGIJA"].isin(izbrane_regije)].copy()
 
 if metrika == "Povprečje":
     agregirano = df_filter.groupby(["YEAR", "STATISTIČNA REGIJA"])["DATA"].mean().unstack()
-elif metrika == "Vsota":
-    agregirano = df_filter.groupby(["YEAR", "STATISTIČNA REGIJA"])["DATA"].sum().unstack()
 else:
     agregirano = df_filter.groupby(["YEAR", "STATISTIČNA REGIJA"])["DATA"].max().unstack()
 
