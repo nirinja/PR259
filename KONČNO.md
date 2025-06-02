@@ -19,7 +19,7 @@ Projekt se osredotoča na analizo delovno aktivnega prebivalstva in strukture BD
 Analiza temelji na odprtih podatkih (podatki.gov.si), pridobljenih iz več virov.
 
 
-Ker je leto 2025 še nepopolno ( podatki še niso dokončni), smo v korakih predpriprave izločili najnovejše leto iz vsake serije, da ne bi popačili izračunov (npr. povprečij ali trendov). Podatke za ostala leta smo združile po letih, da smo vizualno predstavile spremembe v delavnem prebivalstvu skozi čas.
+Ker so podatki za leti 2024 in 2025 še nepopolni ( podatki še niso dokončni), smo v korakih predpriprave izločili najnovejše leto iz vsake serije, da ne bi popačili izračunov (npr. povprečij ali trendov). Podatke za ostala leta smo združile po letih, da smo vizualno predstavile spremembe v delavnem prebivalstvu skozi čas.
 
 
 - Vir: [Delovno aktivno prebivalstvo](https://podatki.gov.si/dataset/surs0700992s)
@@ -47,7 +47,7 @@ delovno aktivne prebivalce. S to ločitvijo smo lahko s pomočjo izračuna dele�
 Izvedle smo tudi analizo starostnih skupin delovno aktivnega prebivalstva, kjer smo podatke združile po letih in starostnih razredih in analiza strukture delovno aktivnega prebivalstva po regijah.
 
 ### Analiza BDP in njegovih komponent
-Za vsako leto (od 2010 do 2024) smo izluščile BDP in končno potrošnjo države. Seriji podatkov sta bili sortirani po letu in pretvorjeni v numerične vrednosti.
+Za vsako leto (od 2010 do 2023) smo izluščile BDP in končno potrošnjo države. Seriji podatkov sta bili sortirani po letu in pretvorjeni v numerične vrednosti.
 Končna potrošnja je zamaknjena za dve leti, da smo dobile višjo korelacijo z zamaknjenim vplivom na trg dela.
 
 ### Napoved števila aktivnih prebivalcev in BDP
@@ -72,7 +72,7 @@ Med vsemi starostnimi skupinami izstopajo prebivalci med 30 in 40-im letom staro
 
 #### Regijska sestava
 
-Na prvi pogled izstopa Osrednjeslovenska regija, ki je od leta 2010 do 2024 povečala število delovno aktivnih prebivalcev s približno 200.000 na skoraj 260.000, 
+Na prvi pogled izstopa Osrednjeslovenska regija, ki je od leta 2010 do 2023 povečala število delovno aktivnih prebivalcev s približno 200.000 na skoraj 260.000, 
 kar je povezano z visoko urbanizacijo, koncentracijo državnih in zasebnih organizacij ter zadostno ponudbo delovnih mest. Druga regija z visoko rastjo je Podravska, kjer je 
  industrijska ponudba pritegnila več delovne sile, tretja pa Savinjska, ki jo zaznamuje močno razvito industrijsko središče. Po drugi strani so manj urbanizirane regije, 
 kot so Koroška, Primorsko-notranjska in Posavska, beležile manjšo rast ali celo nespremenjeno stanje, kar kaže na izseljevanje predvsem mlajših generacij v iskanju boljših zaposlitvenih možnosti.
@@ -116,7 +116,7 @@ Prav tako model ne vključuje dodatnih spremenljivk, kot so cenovni indeksi ener
 
 ## Glavne ugotovitve
 
-Analiza obdobja 2010-2024 je potrdila, da se je slovenski trg skozi leta uspešno prilagajal demografskim spremembam. Čeprav je delež starih od 15 do 64 let upadel, se je delež dejansko 
+Analiza obdobja 2010-2023 je potrdila, da se je slovenski trg skozi leta uspešno prilagajal demografskim spremembam. Čeprav je delež starih od 15 do 64 let upadel, se je delež dejansko 
 zaposlenih med tistimi, ki so sposobni delati znatno povečal. Ena izmed glavnih ugootovitev je, da se je povprečna starost aktivne delovne sile dvignila, saj ostajajo starejpi delavci dlje na trgu dela.
 Močna pozitivna korelacija med številom zaposlenih in BDP, ter še višja korelacija sk  končno potrošnjo poudarjata, da je gospodarska rast tesno povezana z zaposlovanjem in da se javnofinančni ukrepi na trgu dela
 pokažejo z dvoletnim zamikom.
